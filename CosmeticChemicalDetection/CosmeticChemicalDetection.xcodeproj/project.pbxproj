@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C983247026AC769600913556 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983246F26AC769600913556 /* AppDelegate.swift */; };
+		C983247226AC769600913556 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983247126AC769600913556 /* SceneDelegate.swift */; };
+		C983247426AC769600913556 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983247326AC769600913556 /* ContentView.swift */; };
+		C983247626AC769800913556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C983247526AC769800913556 /* Assets.xcassets */; };
+		C983247926AC769800913556 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C983247826AC769800913556 /* Preview Assets.xcassets */; };
+		C983247C26AC769800913556 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C983247A26AC769800913556 /* LaunchScreen.storyboard */; };
+		C983248726AC769800913556 /* CosmeticChemicalDetectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983248626AC769800913556 /* CosmeticChemicalDetectionTests.swift */; };
+		C983249226AC769800913556 /* CosmeticChemicalDetectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983249126AC769800913556 /* CosmeticChemicalDetectionUITests.swift */; };
+		C98324A026AC7D5100913556 /* TextRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983249F26AC7D5100913556 /* TextRecognizer.swift */; };
+		C98324A426AC875700913556 /* ScanningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98324A326AC875700913556 /* ScanningView.swift */; };
+		C98324A626AC9FDF00913556 /* DetectedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98324A526AC9FDF00913556 /* DetectedText.swift */; };
+		C98324AA26ACA75400913556 /* ScanningImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98324A926ACA75400913556 /* ScanningImageView.swift */; };
+		C98324AC270B887A00913556 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98324AB270B887A00913556 /* Ingredient.swift */; };
+		C98324B0270B89BA00913556 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98324AF270B89BA00913556 /* ModelData.swift */; };
+		C98324B2270B8A3D00913556 /* IngredientRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98324B1270B8A3D00913556 /* IngredientRow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C983248326AC769800913556 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C983246426AC769600913556 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C983246B26AC769600913556;
+			remoteInfo = CosmeticChemicalDetection;
+		};
+		C983248E26AC769800913556 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C983246426AC769600913556 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C983246B26AC769600913556;
+			remoteInfo = CosmeticChemicalDetection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C983246C26AC769600913556 /* CosmeticChemicalDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CosmeticChemicalDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C983246F26AC769600913556 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C983247126AC769600913556 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C983247326AC769600913556 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C983247526AC769800913556 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C983247826AC769800913556 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C983247B26AC769800913556 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C983247D26AC769800913556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C983248226AC769800913556 /* CosmeticChemicalDetectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CosmeticChemicalDetectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C983248626AC769800913556 /* CosmeticChemicalDetectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmeticChemicalDetectionTests.swift; sourceTree = "<group>"; };
+		C983248826AC769800913556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C983248D26AC769800913556 /* CosmeticChemicalDetectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CosmeticChemicalDetectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C983249126AC769800913556 /* CosmeticChemicalDetectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CosmeticChemicalDetectionUITests.swift; sourceTree = "<group>"; };
+		C983249326AC769800913556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C983249F26AC7D5100913556 /* TextRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextRecognizer.swift; sourceTree = "<group>"; };
+		C98324A326AC875700913556 /* ScanningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningView.swift; sourceTree = "<group>"; };
+		C98324A526AC9FDF00913556 /* DetectedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectedText.swift; sourceTree = "<group>"; };
+		C98324A926ACA75400913556 /* ScanningImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanningImageView.swift; sourceTree = "<group>"; };
+		C98324AB270B887A00913556 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		C98324AF270B89BA00913556 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		C98324B1270B8A3D00913556 /* IngredientRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C983246926AC769600913556 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C983247F26AC769800913556 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C983248A26AC769800913556 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C983246326AC769600913556 = {
+			isa = PBXGroup;
+			children = (
+				C983246E26AC769600913556 /* CosmeticChemicalDetection */,
+				C983248526AC769800913556 /* CosmeticChemicalDetectionTests */,
+				C983249026AC769800913556 /* CosmeticChemicalDetectionUITests */,
+				C983246D26AC769600913556 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C983246D26AC769600913556 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C983246C26AC769600913556 /* CosmeticChemicalDetection.app */,
+				C983248226AC769800913556 /* CosmeticChemicalDetectionTests.xctest */,
+				C983248D26AC769800913556 /* CosmeticChemicalDetectionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C983246E26AC769600913556 /* CosmeticChemicalDetection */ = {
+			isa = PBXGroup;
+			children = (
+				C983246F26AC769600913556 /* AppDelegate.swift */,
+				C983247126AC769600913556 /* SceneDelegate.swift */,
+				C983247326AC769600913556 /* ContentView.swift */,
+				C983249F26AC7D5100913556 /* TextRecognizer.swift */,
+				C983247526AC769800913556 /* Assets.xcassets */,
+				C983247A26AC769800913556 /* LaunchScreen.storyboard */,
+				C983247D26AC769800913556 /* Info.plist */,
+				C983247726AC769800913556 /* Preview Content */,
+				C98324A326AC875700913556 /* ScanningView.swift */,
+				C98324A526AC9FDF00913556 /* DetectedText.swift */,
+				C98324A926ACA75400913556 /* ScanningImageView.swift */,
+				C98324AB270B887A00913556 /* Ingredient.swift */,
+				C98324AF270B89BA00913556 /* ModelData.swift */,
+				C98324B1270B8A3D00913556 /* IngredientRow.swift */,
+			);
+			path = CosmeticChemicalDetection;
+			sourceTree = "<group>";
+		};
+		C983247726AC769800913556 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C983247826AC769800913556 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C983248526AC769800913556 /* CosmeticChemicalDetectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				C983248626AC769800913556 /* CosmeticChemicalDetectionTests.swift */,
+				C983248826AC769800913556 /* Info.plist */,
+			);
+			path = CosmeticChemicalDetectionTests;
+			sourceTree = "<group>";
+		};
+		C983249026AC769800913556 /* CosmeticChemicalDetectionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C983249126AC769800913556 /* CosmeticChemicalDetectionUITests.swift */,
+				C983249326AC769800913556 /* Info.plist */,
+			);
+			path = CosmeticChemicalDetectionUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C983246B26AC769600913556 /* CosmeticChemicalDetection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C983249626AC769800913556 /* Build configuration list for PBXNativeTarget "CosmeticChemicalDetection" */;
+			buildPhases = (
+				C983246826AC769600913556 /* Sources */,
+				C983246926AC769600913556 /* Frameworks */,
+				C983246A26AC769600913556 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CosmeticChemicalDetection;
+			productName = CosmeticChemicalDetection;
+			productReference = C983246C26AC769600913556 /* CosmeticChemicalDetection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C983248126AC769800913556 /* CosmeticChemicalDetectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C983249926AC769800913556 /* Build configuration list for PBXNativeTarget "CosmeticChemicalDetectionTests" */;
+			buildPhases = (
+				C983247E26AC769800913556 /* Sources */,
+				C983247F26AC769800913556 /* Frameworks */,
+				C983248026AC769800913556 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C983248426AC769800913556 /* PBXTargetDependency */,
+			);
+			name = CosmeticChemicalDetectionTests;
+			productName = CosmeticChemicalDetectionTests;
+			productReference = C983248226AC769800913556 /* CosmeticChemicalDetectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C983248C26AC769800913556 /* CosmeticChemicalDetectionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C983249C26AC769800913556 /* Build configuration list for PBXNativeTarget "CosmeticChemicalDetectionUITests" */;
+			buildPhases = (
+				C983248926AC769800913556 /* Sources */,
+				C983248A26AC769800913556 /* Frameworks */,
+				C983248B26AC769800913556 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C983248F26AC769800913556 /* PBXTargetDependency */,
+			);
+			name = CosmeticChemicalDetectionUITests;
+			productName = CosmeticChemicalDetectionUITests;
+			productReference = C983248D26AC769800913556 /* CosmeticChemicalDetectionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C983246426AC769600913556 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					C983246B26AC769600913556 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					C983248126AC769800913556 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = C983246B26AC769600913556;
+					};
+					C983248C26AC769800913556 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = C983246B26AC769600913556;
+					};
+				};
+			};
+			buildConfigurationList = C983246726AC769600913556 /* Build configuration list for PBXProject "CosmeticChemicalDetection" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C983246326AC769600913556;
+			productRefGroup = C983246D26AC769600913556 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C983246B26AC769600913556 /* CosmeticChemicalDetection */,
+				C983248126AC769800913556 /* CosmeticChemicalDetectionTests */,
+				C983248C26AC769800913556 /* CosmeticChemicalDetectionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C983246A26AC769600913556 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C983247C26AC769800913556 /* LaunchScreen.storyboard in Resources */,
+				C983247926AC769800913556 /* Preview Assets.xcassets in Resources */,
+				C983247626AC769800913556 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C983248026AC769800913556 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C983248B26AC769800913556 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C983246826AC769600913556 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C98324A026AC7D5100913556 /* TextRecognizer.swift in Sources */,
+				C983247026AC769600913556 /* AppDelegate.swift in Sources */,
+				C98324B0270B89BA00913556 /* ModelData.swift in Sources */,
+				C98324A426AC875700913556 /* ScanningView.swift in Sources */,
+				C983247226AC769600913556 /* SceneDelegate.swift in Sources */,
+				C98324B2270B8A3D00913556 /* IngredientRow.swift in Sources */,
+				C98324AC270B887A00913556 /* Ingredient.swift in Sources */,
+				C98324A626AC9FDF00913556 /* DetectedText.swift in Sources */,
+				C98324AA26ACA75400913556 /* ScanningImageView.swift in Sources */,
+				C983247426AC769600913556 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C983247E26AC769800913556 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C983248726AC769800913556 /* CosmeticChemicalDetectionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C983248926AC769800913556 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C983249226AC769800913556 /* CosmeticChemicalDetectionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C983248426AC769800913556 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C983246B26AC769600913556 /* CosmeticChemicalDetection */;
+			targetProxy = C983248326AC769800913556 /* PBXContainerItemProxy */;
+		};
+		C983248F26AC769800913556 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C983246B26AC769600913556 /* CosmeticChemicalDetection */;
+			targetProxy = C983248E26AC769800913556 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C983247A26AC769800913556 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C983247B26AC769800913556 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C983249426AC769800913556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C983249526AC769800913556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C983249726AC769800913556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CosmeticChemicalDetection/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CosmeticChemicalDetection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ai.pragatha.poc.CosmeticChemicalDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C983249826AC769800913556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"CosmeticChemicalDetection/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = CosmeticChemicalDetection/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ai.pragatha.poc.CosmeticChemicalDetection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C983249A26AC769800913556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CosmeticChemicalDetectionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ai.pragatha.poc.CosmeticChemicalDetectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CosmeticChemicalDetection.app/CosmeticChemicalDetection";
+			};
+			name = Debug;
+		};
+		C983249B26AC769800913556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CosmeticChemicalDetectionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ai.pragatha.poc.CosmeticChemicalDetectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CosmeticChemicalDetection.app/CosmeticChemicalDetection";
+			};
+			name = Release;
+		};
+		C983249D26AC769800913556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CosmeticChemicalDetectionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ai.pragatha.poc.CosmeticChemicalDetectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CosmeticChemicalDetection;
+			};
+			name = Debug;
+		};
+		C983249E26AC769800913556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CosmeticChemicalDetectionUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ai.pragatha.poc.CosmeticChemicalDetectionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CosmeticChemicalDetection;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C983246726AC769600913556 /* Build configuration list for PBXProject "CosmeticChemicalDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C983249426AC769800913556 /* Debug */,
+				C983249526AC769800913556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C983249626AC769800913556 /* Build configuration list for PBXNativeTarget "CosmeticChemicalDetection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C983249726AC769800913556 /* Debug */,
+				C983249826AC769800913556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C983249926AC769800913556 /* Build configuration list for PBXNativeTarget "CosmeticChemicalDetectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C983249A26AC769800913556 /* Debug */,
+				C983249B26AC769800913556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C983249C26AC769800913556 /* Build configuration list for PBXNativeTarget "CosmeticChemicalDetectionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C983249D26AC769800913556 /* Debug */,
+				C983249E26AC769800913556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C983246426AC769600913556 /* Project object */;
+}
