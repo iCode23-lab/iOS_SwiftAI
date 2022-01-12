@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0200CCA700C312E948A9BB6B /* Pods_CoreML_RDC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C802DCA33D3EE785222B226 /* Pods_CoreML_RDC.framework */; };
+		C95BFC8922448FA70041E70A /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C95BFC8822448FA60041E70A /* libc++.tbd */; };
+		C95BFC8B22448FB80041E70A /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95BFC8A22448FB80041E70A /* CoreImage.framework */; };
+		C95BFCB2224496E30041E70A /* tessdata in Resources */ = {isa = PBXBuildFile; fileRef = C95BFCB1224496E30041E70A /* tessdata */; };
+		C987EC1622244B0400288D07 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C987EC1522244B0400288D07 /* AppDelegate.swift */; };
+		C987EC1822244B0400288D07 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C987EC1722244B0400288D07 /* ViewController.swift */; };
+		C987EC1B22244B0400288D07 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C987EC1922244B0400288D07 /* Main.storyboard */; };
+		C987EC1D22244B0500288D07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C987EC1C22244B0500288D07 /* Assets.xcassets */; };
+		C987EC2022244B0500288D07 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C987EC1E22244B0500288D07 /* LaunchScreen.storyboard */; };
+		C987EC2B22244B0500288D07 /* CoreML_RDCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C987EC2A22244B0500288D07 /* CoreML_RDCTests.swift */; };
+		C987EC3622244B0500288D07 /* CoreML_RDCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C987EC3522244B0500288D07 /* CoreML_RDCUITests.swift */; };
+		C987EC45222483B200288D07 /* Vision.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C987EC44222483B200288D07 /* Vision.framework */; };
+		C987EC4F2224A14200288D07 /* single_personal_check.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C987EC4E2224A14200288D07 /* single_personal_check.jpg */; };
+		C987EC512225D59000288D07 /* Check_front2_66_cents.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C987EC502225D59000288D07 /* Check_front2_66_cents.JPG */; };
+		C987EC552225DB1300288D07 /* Check_front5_200_dollars.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C987EC522225DB1300288D07 /* Check_front5_200_dollars.JPG */; };
+		C987EC562225DB1300288D07 /* Check_front4_225_dollars.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C987EC532225DB1300288D07 /* Check_front4_225_dollars.JPG */; };
+		C987EC572225DB1300288D07 /* Check_front3_407_dollars.JPG in Resources */ = {isa = PBXBuildFile; fileRef = C987EC542225DB1300288D07 /* Check_front3_407_dollars.JPG */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C987EC2722244B0500288D07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C987EC0A22244B0300288D07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C987EC1122244B0300288D07;
+			remoteInfo = "CoreML-RDC";
+		};
+		C987EC3222244B0500288D07 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C987EC0A22244B0300288D07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C987EC1122244B0300288D07;
+			remoteInfo = "CoreML-RDC";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C802DCA33D3EE785222B226 /* Pods_CoreML_RDC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreML_RDC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A72781EB8F3E54828BD0664 /* Pods-CoreML-RDC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreML-RDC.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreML-RDC/Pods-CoreML-RDC.release.xcconfig"; sourceTree = "<group>"; };
+		C95BFC8822448FA60041E70A /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		C95BFC8A22448FB80041E70A /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		C95BFCB1224496E30041E70A /* tessdata */ = {isa = PBXFileReference; lastKnownFileType = folder; name = tessdata; path = "../../../../../../Downloads/Tesseract-OCR-iOS-master/TestsProject/TestsProjectTests/tessdata"; sourceTree = "<group>"; };
+		C987EC1222244B0300288D07 /* CoreML-RDC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CoreML-RDC.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C987EC1522244B0400288D07 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C987EC1722244B0400288D07 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C987EC1A22244B0400288D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C987EC1C22244B0500288D07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C987EC1F22244B0500288D07 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C987EC2122244B0500288D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C987EC2622244B0500288D07 /* CoreML-RDCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreML-RDCTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C987EC2A22244B0500288D07 /* CoreML_RDCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_RDCTests.swift; sourceTree = "<group>"; };
+		C987EC2C22244B0500288D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C987EC3122244B0500288D07 /* CoreML-RDCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreML-RDCUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C987EC3522244B0500288D07 /* CoreML_RDCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreML_RDCUITests.swift; sourceTree = "<group>"; };
+		C987EC3722244B0500288D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C987EC44222483B200288D07 /* Vision.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Vision.framework; path = System/Library/Frameworks/Vision.framework; sourceTree = SDKROOT; };
+		C987EC4E2224A14200288D07 /* single_personal_check.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = single_personal_check.jpg; sourceTree = "<group>"; };
+		C987EC502225D59000288D07 /* Check_front2_66_cents.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Check_front2_66_cents.JPG; sourceTree = "<group>"; };
+		C987EC522225DB1300288D07 /* Check_front5_200_dollars.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Check_front5_200_dollars.JPG; sourceTree = "<group>"; };
+		C987EC532225DB1300288D07 /* Check_front4_225_dollars.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Check_front4_225_dollars.JPG; sourceTree = "<group>"; };
+		C987EC542225DB1300288D07 /* Check_front3_407_dollars.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Check_front3_407_dollars.JPG; sourceTree = "<group>"; };
+		E1C594CF8789B06DD10B075B /* Pods-CoreML-RDC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreML-RDC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreML-RDC/Pods-CoreML-RDC.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C987EC0F22244B0300288D07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C95BFC8B22448FB80041E70A /* CoreImage.framework in Frameworks */,
+				C95BFC8922448FA70041E70A /* libc++.tbd in Frameworks */,
+				C987EC45222483B200288D07 /* Vision.framework in Frameworks */,
+				0200CCA700C312E948A9BB6B /* Pods_CoreML_RDC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C987EC2322244B0500288D07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C987EC2E22244B0500288D07 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71FE87187BBE98EABF122D21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1C594CF8789B06DD10B075B /* Pods-CoreML-RDC.debug.xcconfig */,
+				6A72781EB8F3E54828BD0664 /* Pods-CoreML-RDC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C95BFCB0224496CC0041E70A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C95BFCB1224496E30041E70A /* tessdata */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C987EC0922244B0300288D07 = {
+			isa = PBXGroup;
+			children = (
+				C987EC1422244B0400288D07 /* CoreML-RDC */,
+				C987EC2922244B0500288D07 /* CoreML-RDCTests */,
+				C987EC3422244B0500288D07 /* CoreML-RDCUITests */,
+				C987EC1322244B0300288D07 /* Products */,
+				C987EC43222483B200288D07 /* Frameworks */,
+				71FE87187BBE98EABF122D21 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		C987EC1322244B0300288D07 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C987EC1222244B0300288D07 /* CoreML-RDC.app */,
+				C987EC2622244B0500288D07 /* CoreML-RDCTests.xctest */,
+				C987EC3122244B0500288D07 /* CoreML-RDCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C987EC1422244B0400288D07 /* CoreML-RDC */ = {
+			isa = PBXGroup;
+			children = (
+				C95BFCB0224496CC0041E70A /* Resources */,
+				C987EC542225DB1300288D07 /* Check_front3_407_dollars.JPG */,
+				C987EC532225DB1300288D07 /* Check_front4_225_dollars.JPG */,
+				C987EC522225DB1300288D07 /* Check_front5_200_dollars.JPG */,
+				C987EC502225D59000288D07 /* Check_front2_66_cents.JPG */,
+				C987EC4E2224A14200288D07 /* single_personal_check.jpg */,
+				C987EC1522244B0400288D07 /* AppDelegate.swift */,
+				C987EC1722244B0400288D07 /* ViewController.swift */,
+				C987EC1922244B0400288D07 /* Main.storyboard */,
+				C987EC1C22244B0500288D07 /* Assets.xcassets */,
+				C987EC1E22244B0500288D07 /* LaunchScreen.storyboard */,
+				C987EC2122244B0500288D07 /* Info.plist */,
+			);
+			path = "CoreML-RDC";
+			sourceTree = "<group>";
+		};
+		C987EC2922244B0500288D07 /* CoreML-RDCTests */ = {
+			isa = PBXGroup;
+			children = (
+				C987EC2A22244B0500288D07 /* CoreML_RDCTests.swift */,
+				C987EC2C22244B0500288D07 /* Info.plist */,
+			);
+			path = "CoreML-RDCTests";
+			sourceTree = "<group>";
+		};
+		C987EC3422244B0500288D07 /* CoreML-RDCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C987EC3522244B0500288D07 /* CoreML_RDCUITests.swift */,
+				C987EC3722244B0500288D07 /* Info.plist */,
+			);
+			path = "CoreML-RDCUITests";
+			sourceTree = "<group>";
+		};
+		C987EC43222483B200288D07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C95BFC8A22448FB80041E70A /* CoreImage.framework */,
+				C95BFC8822448FA60041E70A /* libc++.tbd */,
+				C987EC44222483B200288D07 /* Vision.framework */,
+				0C802DCA33D3EE785222B226 /* Pods_CoreML_RDC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C987EC1122244B0300288D07 /* CoreML-RDC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C987EC3A22244B0600288D07 /* Build configuration list for PBXNativeTarget "CoreML-RDC" */;
+			buildPhases = (
+				2E5665318FE0262BFCF4D11D /* [CP] Check Pods Manifest.lock */,
+				C987EC0E22244B0300288D07 /* Sources */,
+				C987EC0F22244B0300288D07 /* Frameworks */,
+				C987EC1022244B0300288D07 /* Resources */,
+				2450AF8DEEEDC50DDB6FD902 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CoreML-RDC";
+			productName = "CoreML-RDC";
+			productReference = C987EC1222244B0300288D07 /* CoreML-RDC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C987EC2522244B0500288D07 /* CoreML-RDCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C987EC3D22244B0600288D07 /* Build configuration list for PBXNativeTarget "CoreML-RDCTests" */;
+			buildPhases = (
+				C987EC2222244B0500288D07 /* Sources */,
+				C987EC2322244B0500288D07 /* Frameworks */,
+				C987EC2422244B0500288D07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C987EC2822244B0500288D07 /* PBXTargetDependency */,
+			);
+			name = "CoreML-RDCTests";
+			productName = "CoreML-RDCTests";
+			productReference = C987EC2622244B0500288D07 /* CoreML-RDCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C987EC3022244B0500288D07 /* CoreML-RDCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C987EC4022244B0600288D07 /* Build configuration list for PBXNativeTarget "CoreML-RDCUITests" */;
+			buildPhases = (
+				C987EC2D22244B0500288D07 /* Sources */,
+				C987EC2E22244B0500288D07 /* Frameworks */,
+				C987EC2F22244B0500288D07 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C987EC3322244B0500288D07 /* PBXTargetDependency */,
+			);
+			name = "CoreML-RDCUITests";
+			productName = "CoreML-RDCUITests";
+			productReference = C987EC3122244B0500288D07 /* CoreML-RDCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C987EC0A22244B0300288D07 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Santander;
+				TargetAttributes = {
+					C987EC1122244B0300288D07 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					C987EC2522244B0500288D07 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C987EC1122244B0300288D07;
+					};
+					C987EC3022244B0500288D07 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = C987EC1122244B0300288D07;
+					};
+				};
+			};
+			buildConfigurationList = C987EC0D22244B0300288D07 /* Build configuration list for PBXProject "CoreML-RDC" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C987EC0922244B0300288D07;
+			productRefGroup = C987EC1322244B0300288D07 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C987EC1122244B0300288D07 /* CoreML-RDC */,
+				C987EC2522244B0500288D07 /* CoreML-RDCTests */,
+				C987EC3022244B0500288D07 /* CoreML-RDCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C987EC1022244B0300288D07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C987EC2022244B0500288D07 /* LaunchScreen.storyboard in Resources */,
+				C987EC552225DB1300288D07 /* Check_front5_200_dollars.JPG in Resources */,
+				C95BFCB2224496E30041E70A /* tessdata in Resources */,
+				C987EC562225DB1300288D07 /* Check_front4_225_dollars.JPG in Resources */,
+				C987EC512225D59000288D07 /* Check_front2_66_cents.JPG in Resources */,
+				C987EC1D22244B0500288D07 /* Assets.xcassets in Resources */,
+				C987EC4F2224A14200288D07 /* single_personal_check.jpg in Resources */,
+				C987EC572225DB1300288D07 /* Check_front3_407_dollars.JPG in Resources */,
+				C987EC1B22244B0400288D07 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C987EC2422244B0500288D07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C987EC2F22244B0500288D07 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2450AF8DEEEDC50DDB6FD902 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CoreML-RDC/Pods-CoreML-RDC-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftOCR/SwiftOCR.framework",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftOCR.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreML-RDC/Pods-CoreML-RDC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E5665318FE0262BFCF4D11D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoreML-RDC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C987EC0E22244B0300288D07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C987EC1822244B0400288D07 /* ViewController.swift in Sources */,
+				C987EC1622244B0400288D07 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C987EC2222244B0500288D07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C987EC2B22244B0500288D07 /* CoreML_RDCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C987EC2D22244B0500288D07 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C987EC3622244B0500288D07 /* CoreML_RDCUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C987EC2822244B0500288D07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C987EC1122244B0300288D07 /* CoreML-RDC */;
+			targetProxy = C987EC2722244B0500288D07 /* PBXContainerItemProxy */;
+		};
+		C987EC3322244B0500288D07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C987EC1122244B0300288D07 /* CoreML-RDC */;
+			targetProxy = C987EC3222244B0500288D07 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C987EC1922244B0400288D07 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C987EC1A22244B0400288D07 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C987EC1E22244B0500288D07 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C987EC1F22244B0500288D07 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C987EC3822244B0600288D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C987EC3922244B0600288D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C987EC3B22244B0600288D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1C594CF8789B06DD10B075B /* Pods-CoreML-RDC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "CoreML-RDC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.santander.CoreML.CoreML-RDC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C987EC3C22244B0600288D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A72781EB8F3E54828BD0664 /* Pods-CoreML-RDC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "CoreML-RDC/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.santander.CoreML.CoreML-RDC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C987EC3E22244B0600288D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CoreML-RDCTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.santander.CoreML.CoreML-RDCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML-RDC.app/CoreML-RDC";
+			};
+			name = Debug;
+		};
+		C987EC3F22244B0600288D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CoreML-RDCTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.santander.CoreML.CoreML-RDCTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoreML-RDC.app/CoreML-RDC";
+			};
+			name = Release;
+		};
+		C987EC4122244B0600288D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CoreML-RDCUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.santander.CoreML.CoreML-RDCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CoreML-RDC";
+			};
+			name = Debug;
+		};
+		C987EC4222244B0600288D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "CoreML-RDCUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.santander.CoreML.CoreML-RDCUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "CoreML-RDC";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C987EC0D22244B0300288D07 /* Build configuration list for PBXProject "CoreML-RDC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C987EC3822244B0600288D07 /* Debug */,
+				C987EC3922244B0600288D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C987EC3A22244B0600288D07 /* Build configuration list for PBXNativeTarget "CoreML-RDC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C987EC3B22244B0600288D07 /* Debug */,
+				C987EC3C22244B0600288D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C987EC3D22244B0600288D07 /* Build configuration list for PBXNativeTarget "CoreML-RDCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C987EC3E22244B0600288D07 /* Debug */,
+				C987EC3F22244B0600288D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C987EC4022244B0600288D07 /* Build configuration list for PBXNativeTarget "CoreML-RDCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C987EC4122244B0600288D07 /* Debug */,
+				C987EC4222244B0600288D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C987EC0A22244B0300288D07 /* Project object */;
+}
